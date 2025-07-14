@@ -50,10 +50,9 @@ console.log(list.pop);      // Node { value: 'B', nextNode: null }
 console.log(list.contains('A')); // true
 console.log(list.find('A'));     // The node with value A is at node of index 1
 ```
-> Notes
-> The implementation uses getters (get) for properties like size, headNode, tail, pop, and toString for convenient access.
->
-> The #looper() method helps avoid redundant loop logic across multiple methods.
+> **Notes**
+> - The implementation uses getters (get) for properties like size, headNode, tail, pop, and toString for convenient access.
+> - The #looper() method helps avoid redundant loop logic across multiple methods.
 
 License
 This project is open-source and can be used for educational or personal use.
