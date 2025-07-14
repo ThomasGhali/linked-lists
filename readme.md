@@ -29,6 +29,7 @@ class Node {
     this.nextNode = nextNode;
   }
 }
+```
 LinkedList Class
 Manages the linked list and its operations.
 
@@ -36,9 +37,7 @@ Private Method
 #looper(callback) — A private helper for traversing the list. Accepts a callback function and executes it on each node. Allows early exit when needed by returning true from the callback.
 
 Example Usage
-js
-Copy
-Edit
+```js
 const list = new LinkedList();
 list.append('A');
 list.append('B');
@@ -50,6 +49,7 @@ console.log(list.tail);     // Node { value: 'B', nextNode: null }
 console.log(list.pop);      // Node { value: 'B', nextNode: null }
 console.log(list.contains('A')); // true
 console.log(list.find('A'));     // The node with value A is at node of index 1
+```
 Notes
 The implementation uses getters (get) for properties like size, headNode, tail, pop, and toString for convenient access.
 
@@ -57,10 +57,6 @@ The #looper() method helps avoid redundant loop logic across multiple methods.
 
 License
 This project is open-source and can be used for educational or personal use.
-
-yaml
-Copy
-Edit
 
 ---
 
